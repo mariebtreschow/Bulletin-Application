@@ -1,0 +1,13 @@
+extends ../application.pug
+
+block content
+	.container
+		br
+		h2 Listing Messages:
+		hr
+		each message in messages
+			.card.card-block
+				.row
+					.col-xs-4
+						h2= message.title
+						p= message.body

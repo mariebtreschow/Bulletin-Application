@@ -1,0 +1,18 @@
+extends ../application.pug
+
+block content
+	.container
+		.row
+			.col-xs-8
+				br
+				h1 Post a message:
+				hr
+				form(action="/messages" method="POST")
+					div(class="form-group")
+						lable(for="message-title") Title
+						input(name="title" type="text" class="form-control" id="title")
+					div(class="form-group")
+						lable(for="message-body") Message
+						textarea(name="body" type="text" class="form-control" rows=6 id="message-body")
+					div(class="form-group text-xs-left")
+						button(type="submit" class="btn btn-ln btn-success") Submit Message

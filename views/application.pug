@@ -1,0 +1,13 @@
+html
+   head
+      title Bulletin
+      link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous")
+   body
+      nav(class="navbar navbar-light bg-faded")
+         a(class="navbar-brand" href="/") Bulletin
+         a(href="/messages/show" class="btn btn-info float-xs-right") View messages
+
+
+      block content
+
+   script(src='https://code.jquery.com/jquery-3.1.1.js', integrity='sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=', crossorigin='anonymous')
